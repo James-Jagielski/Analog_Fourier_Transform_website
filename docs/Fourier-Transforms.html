@@ -55,28 +55,44 @@
 
 			<!-- Main -->
 				<div id="main" class="wrapper style2">
-					<div class="title">About US</div>
+					<div class="title">Foruier Transforms</div>
 					<div class="container">
 
 						<!-- Content -->
-							<div id="content">
-								<article class="box post">
-									<header class="style1">
-										<h2>This project is for the Quantitative Engineering Analysis at Olin College of Engineering<br class="mobile-hide" />
-										</h2>
-										<p>We are two students in our second year at Olin College of Engineering</p>
-									</header>
-									<a href="#" class="image featured">
-										<img src="images/LinkedIn Photos 2022-36.jpg" alt="" />
-									</a>
-									<p>My name is James Jagielski and I'm studying Electrical and Computer Engineering at Olin College. I lead the sailing club at Olin, 
-										I'm on the automation team in the hydroponics group, and I'm on a student led research team in ion propulsion.
-									</p>
-									<a href="#" class="image featured">
-										<img src="images/TEST12.jpg" alt="" />
-									<p> 
-										My name is Philip Post and I'm studying Electrical and Computer Engineering at Olin College. I'm part of the satelite coms research team.
-									</p>
+						<div id="content">
+							<article class="box post">
+								<header class="style1">
+							<h2>Description of the fourier transform</h2>
+							<p>Through our final project, we attempted to recreate a discrete fourier transformation (DFT) within an analog circuit. 
+								This is possible because a DFT fits a set of discrete waves spanning a range of frequencies to a dataset. 
+								The better the wave described by the dataset is recreated by a discrete wave, the higher proportion of the data can be 
+								described by said frequency. 
+							</p>
+						</header>
+						<a href="#" class="image featured">
+							<img src="images/TEST6.png" alt="" />
+						</a>
+						<p>Fundamentally, the dot product of each point in our dataset is being taken against the discrete frequency and 
+							integrating these dot products over time should produce the magnitude at which the discrete frequency describes the data. 
+							This works because the dot product produces a magnitude of how well two vectors align and then integrating these magnitudes 
+							provides us an overall value for said frequency.
+						</p>
+						<p>With these fundamentals in mind, we believed that a DFT could be achieved through an analog circuit. Our basic idea was that 
+							combining a wave multiplier and then integrator would yield the same outcome with the multiplier performing the dot product between 
+							the unknown wave and a known frequency and then the integrator returning the overall magnitude of how well the known frequency describes 
+							the unknown wave. 
+						</p>
+						<a href="#" class="image featured">
+							<img src="images/TEST5.png" alt="" />
+						</a>
+						<p>
+							In this approach, the known wave is analogous to a column in a DFT matrix and the integrator produces the magnitude of said frequency, so 
+							we can do frequency domain analysis of the unknown wave. With this, we could cycle through a large range of frequencies in order to build 
+							an accurate picture of what combination of known frequencies forms the unknown wave.
+
+					</p>
+					</article>
+				</div>
 
 
 		</div>
